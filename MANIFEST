@@ -1,0 +1,11 @@
+Build.PL
+lib/JS/Data/Page.js
+lib/JS/Data/Page.pm
+MANIFEST			This list of files
+tests/lib/Test/Builder.js
+tests/lib/Test/More.js
+tests/simple.html
+README
+LICENSE
+META.yml
+META.json
