@@ -32,6 +32,7 @@ my $build = Module::Build->new(
     module_name => 'JS::Data::Page',
     requires =>
         { 'JS' => 0 },
+    share_dir => 'share',
     sign => 1,
 );
 $build->create_build_script;
