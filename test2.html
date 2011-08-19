@@ -80,25 +80,25 @@
             }
         }
         //diag('old: ', arr[0], ', ', arr[1], ', ', arr[2]);
-        p = new Apple( arr[0], arr[1], arr[2] );
+        p = new Data.Page( arr[0], arr[1], arr[2] );
         check( p, name, arr );
 
         //diag('new: ', arr[0], ', ', arr[1], ', ', arr[2]);
-        p = new Apple();
+        p = new Data.Page();
         p.total_entries( arr[0] );
         p.entries_per_page( arr[1] );
         p.current_page( arr[2] );
         check( p, name, arr );
     }
 
-    p = new Apple( 0, 10 );
-    isaOK( p, 'Apple' ); 
+    p = new Data.Page( 0, 10 );
+    isaOK( p, 'Data.Page' );
     var empty = [];
     var spliced = p.splice( empty );
     is( spliced.length, 0, "Splice on empty is empty" );
 
     function check ( page, name, vals ){
-        isaOK( page, 'Apple' );
+        isaOK( page, 'Data.Page' );
 
         is( p.first_page(),    vals[3], name + ': first page'    );
         is( p.last_page(),     vals[4], name + ': last page'     );

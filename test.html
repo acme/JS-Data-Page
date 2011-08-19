@@ -12,7 +12,7 @@
 window.onload = function(){
   plan({ noPlan: true });
   ok(1, "one");
-  var apple = new Apple(100, 10, 1);
+  var apple = new Data.Page(100, 10, 1);
   is(apple.first_page(), 1, 'first_page');
   is(apple.last_page(), 10, 'last_page');
   is(apple.first(), 1, 'first');
