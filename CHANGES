@@ -1,4 +1,7 @@
 Revision history for Perl module JS::Data::Page:
 
-0.01 Fri Aug 19 12:46:10 CEST 2011
+0.02
+    - move to CoffeeScript-based JavaScript
+
+0 Fri Aug 19 12:46:10 CEST 2011
     - initial release

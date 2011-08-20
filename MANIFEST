@@ -6,6 +6,7 @@ MANIFEST			This list of files
 META.json
 META.yml
 README
+share/JS/Data/Page.coffee
 share/JS/Data/Page.js
 tests/lib/Test/Builder.js
 tests/lib/Test/More.js
