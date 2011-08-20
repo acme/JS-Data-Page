@@ -3,8 +3,6 @@ class Data
 class Data.Page
   constructor: (@_total_entries = 0, @_entries_per_page = 10, @_current_page = 1) ->
 
-  Data.Page.VERSION = "0.02"
-
   total_entries: (total_entries) ->
     @_total_entries = total_entries if total_entries
     return @_total_entries
@@ -75,4 +73,5 @@ class Data.Page
         return 0
     else
         return this.last() - this.first() + 1
-    
+
+Data.Page.VERSION = "0.02"
